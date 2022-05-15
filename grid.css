@@ -1,0 +1,33 @@
+.item{
+    background-color: blue; 
+    padding:20px;
+    color:antiquewhite;
+    font-size:1.5rem;
+    font-weight:bold;
+    border:3px solid red;
+ }
+ 
+ .container{
+     display: grid;
+     grid-template-columns: 9fr 3fr 2fr;
+     grid-template-rows:1fr 8fr 1fr;
+     grid-template-areas: 
+     "header header header"
+     "article nav ads"
+     "footer nav ads";
+     grid-gap:10px;
+ }
+  
+ .header{
+     grid-area:header;
+ }
+ 
+ .nav{
+     grid-area:nav;
+ }
+ .ads{
+     grid-area:ads;
+ }
+ 
+ 
+ 
